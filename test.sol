@@ -3,7 +3,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Property{
-		uint public price;
+		int public price;
         string location;
         address public immutable owner;
 		
@@ -13,7 +13,7 @@ contract Property{
         }
 
 
-		function getPrice() public view returns(uint){
+		function getPrice() public view returns(int){
 				return price;
 		}
 
